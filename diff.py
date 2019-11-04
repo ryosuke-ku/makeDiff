@@ -39,6 +39,7 @@ def writeHtml():
     file.write('pre {background-color:white; padding:10px}\n')
     file.write('</style>\n')
     file.write('<title>Test Code Searcher Report</title>\n')
+    file.write('<link rel = "stylesheet" href="css/styles.css">')
     file.write('<head>\n')
     file.write('<body>\n')
     file.write('<h2>Test Code Searcher Report</h2>\n')
@@ -199,13 +200,21 @@ try:
                 file.write('Input Code' + '\n')
                 file.write('<pre>\n')
                 # file.write(pathToCodeInfoDict[input_path][0][1:])
-                for line1 in code1:
-                    file.write(line1 + '\n')
+                # for line1 in code1:
+                #     file.write(line1 + '\n')
                     # file.write('<mark>' + line1 + '</mark>' + '\n')
                     # print(line1)
 
                 for line1 in range(0,separator_num):
-                    print(twoCodeArray[line1])            
+                    line_mark1 = twoCodeArray[line1][:1]
+                    if line_mark1 == '!':
+                        file.write('<mark class="red">' + twoCodeArray[line1] + '</mark>' + '\n')
+                        print(twoCodeArray[line1])
+                    elif line_mark1 == '+':
+                        file.write('<mark class="yellow">' + twoCodeArray[line1] + '</mark>' + '\n')
+                    else:
+                        file.write(twoCodeArray[line1] + '\n')    
+
                 file.write('</pre>\n')
                 file.write('</td>\n')
                 file.write('</tr>\n')
@@ -223,11 +232,13 @@ try:
                     # print(line2)
 
                 for line2 in range(separator_num+1,len(twoCodeArray)):
-                    line_mark = twoCodeArray[line2][:1]
+                    line_mark2 = twoCodeArray[line2][:1]
                     # print(line_mark)
-                    if line_mark == '!':
-                        file.write('<mark>' + twoCodeArray[line2] + '</mark>' + '\n')
+                    if line_mark2 == '!':
+                        file.write('<mark class="green">' + twoCodeArray[line2] + '</mark>' + '\n')
                         print(twoCodeArray[line2])
+                    elif line_mark2 == '+':
+                        file.write('<mark class="yellow">' + twoCodeArray[line2] + '</mark>' + '\n')
                     else:
                         file.write(twoCodeArray[line2] + '\n')
 
