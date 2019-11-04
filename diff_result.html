@@ -1,0 +1,198 @@
+<html>
+<head>
+<style type="text/css">
+body {font-family:Arial}
+table {background-color:white; border:0px solid white; width:100%; margin-left:auto; margin-right: auto}
+td {background-color:#ff7e75; padding:10px; border:0px solid white}
+pre {background-color:white; padding:10px}
+</style>
+<title>Test Code Searcher Report</title>
+<head>
+<body>
+<h2>Test Code Searcher Report</h2>
+<TABLE BORDER="0"><h3>Clone Pairs 1</h3>
+<TR>
+<TD>
+<table border="1" align="left" cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Input Code
+<pre>
+	public void setSouthMember(Canvas member) {
+		if (member == null) {
+			south.setHeight(0);
+			south.setMembers();
+		} else {
+			member.setWidth("100%");
+			south.setHeight(1);
+			south.setMembers(member);
+		}
+	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+<TD>
+<table border="1"  cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Lines 55 - 66 of 360-Innovations_VaadinSmartGWT/VaadinSmartGWT/org.vaadin.smartgwt/src/main/java/org/vaadin/smartgwt/server/layout/BorderLayout.java
+<pre>
+<mark>! 	public void setCenterMember(Canvas member) {</mark>
+  		if (member == null) {
+<mark>! 			center.setWidth(0);</mark>
+<mark>! 			center.setHeight(0);</mark>
+<mark>! 			center.setMembers();</mark>
+  		} else {
++ 			member.setHeight("100%");
+  			member.setWidth("100%");
+<mark>! 			center.setWidth("100%");</mark>
+<mark>! 			center.setMembers(member);</mark>
+  		}
+  	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0"><h3>Clone Pairs 3</h3>
+<TR>
+<TD>
+<table border="1" align="left" cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Input Code
+<pre>
+	public void setSouthMember(Canvas member) {
+		if (member == null) {
+			south.setHeight(0);
+			south.setMembers();
+		} else {
+			member.setWidth("100%");
+			south.setHeight(1);
+			south.setMembers(member);
+		}
+	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+<TD>
+<table border="1"  cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Lines 72 - 81 of 360-Innovations_VaadinSmartGWT/VaadinSmartGWT/org.vaadin.smartgwt/src/main/java/org/vaadin/smartgwt/server/layout/BorderLayout.java
+<pre>
+<mark>! 	public void setNorthMember(Canvas member) {</mark>
+  		if (member == null) {
+<mark>! 			north.setHeight(0);</mark>
+<mark>! 			north.setMembers();</mark>
+  		} else {
+  			member.setWidth("100%");
+<mark>! 			north.setHeight(1);</mark>
+<mark>! 			north.setMembers(member);</mark>
+  		}
+  	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0"><h3>Clone Pairs 4</h3>
+<TR>
+<TD>
+<table border="1" align="left" cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Input Code
+<pre>
+	public void setSouthMember(Canvas member) {
+		if (member == null) {
+			south.setHeight(0);
+			south.setMembers();
+		} else {
+			member.setWidth("100%");
+			south.setHeight(1);
+			south.setMembers(member);
+		}
+	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+<TD>
+<table border="1"  cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Lines 102 - 111 of 360-Innovations_VaadinSmartGWT/VaadinSmartGWT/org.vaadin.smartgwt/src/main/java/org/vaadin/smartgwt/server/layout/BorderLayout.java
+<pre>
+<mark>! 	public void setWestMember(Canvas member) {</mark>
+  		if (member == null) {
+<mark>! 			west.setWidth(0);</mark>
+<mark>! 			west.setMembers();</mark>
+  		} else {
+<mark>! 			member.setHeight("100%");</mark>
+<mark>! 			west.setWidth(1);</mark>
+<mark>! 			west.setMembers(member);</mark>
+  		}
+  	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+</TR>
+</TABLE>
+<TABLE BORDER="0"><h3>Clone Pairs 5</h3>
+<TR>
+<TD>
+<table border="1" align="left" cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Input Code
+<pre>
+	public void setSouthMember(Canvas member) {
+		if (member == null) {
+			south.setHeight(0);
+			south.setMembers();
+		} else {
+			member.setWidth("100%");
+			south.setHeight(1);
+			south.setMembers(member);
+		}
+	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+<TD>
+<table border="1"  cellspacing="0" cellpadding="5" bordercolor="#333333">
+<tr>
+<td>
+Lines 117 - 126 of 360-Innovations_VaadinSmartGWT/VaadinSmartGWT/org.vaadin.smartgwt/src/main/java/org/vaadin/smartgwt/server/layout/BorderLayout.java
+<pre>
+<mark>! 	public void setEastMember(Canvas member) {</mark>
+  		if (member == null) {
+<mark>! 			east.setWidth(0);</mark>
+<mark>! 			east.setMembers();</mark>
+  		} else {
+<mark>! 			member.setHeight("100%");</mark>
+<mark>! 			east.setWidth(1);</mark>
+<mark>! 			east.setMembers(member);</mark>
+  		}
+  	}
+</pre>
+</td>
+</tr>
+</table>
+</TD>
+</TR>
+</TABLE>
